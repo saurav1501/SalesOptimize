@@ -85,8 +85,8 @@ public class ExtentListeners extends BaseClass implements ITestListener {
 		}
 		try {
 			
-			if(System.getProperty("os.name").equalsIgnoreCase("Linux")){					
-			String jenkinsScreenshot = "https://test.usgbc.org/job/ArcSelenium/ws/Reports/Screenshots/"+result.getTestClass().getName()+ result.getMethod().getMethodName() + ".png";
+			if(System.getProperty("os.name").equalsIgnoreCase("Windows 10")){					
+			String jenkinsScreenshot = "ws/Reports/Screenshots/"+result.getTestClass().getName()+ result.getMethod().getMethodName() + ".png";
             testLog.get().fail("<details>" + "<summary>" + "<b>" + "<font color=" + "red>"
 							+ "Screenshot of failure : Click to see the Failure Image ->" + "</font>" + "</b>"
 							+ "</summary>" + "<a href=" + jenkinsScreenshot + "><img height=600 width=400 target=_blank src=" + jenkinsScreenshot
