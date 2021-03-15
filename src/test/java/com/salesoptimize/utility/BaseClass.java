@@ -80,6 +80,8 @@ public class BaseClass {
 			
 			System.out.println(browserName);
 			System.out.println(environment);
+			System.out.println(System.getProperty("os.name"));
+			
 
 				
 		}else{
@@ -89,6 +91,7 @@ public class BaseClass {
 			
 			System.out.println(browserName);
 			System.out.println(environment);
+			System.out.println(System.getProperty("os.name"));
 			
 		}
 		

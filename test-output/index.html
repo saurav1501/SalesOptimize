@@ -29,15 +29,15 @@
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-LandingPage" class="navigator-link">
+            <a href="#" class="navigator-link" panel-name="suite-LandingPage">
               <span class="suite-name border-failed">LandingPage</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-LandingPage" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="test-xml-LandingPage">
                     <span>C:\Users\SauravKumarSinha\Documents\SalesOptimizeTest\TestNGSuite\LandingPage.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-LandingPage" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-LandingPage">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-LandingPage" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-LandingPage">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-LandingPage" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-LandingPage">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-LandingPage" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-LandingPage">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-LandingPage" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-LandingPage">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-LandingPage" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-LandingPage">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -101,8 +101,8 @@
                     </span>
                     <div class="method-list-content failed suite-LandingPage">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-LandingPage" title="com.salesoptimize.landingpage.LoginSalesOptimizeTest" class="method navigator-link" hash-for-method="LoginSalesOptimize(2, Login)">LoginSalesOptimize(2, Login)</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LandingPage" title="com.salesoptimize.landingpage.LoginSalesOptimizeTest" hash-for-method="LoginSalesOptimize(2, Login)">LoginSalesOptimize(2, Login)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-LandingPage -->
@@ -115,8 +115,8 @@
                     </span>
                     <div class="method-list-content passed suite-LandingPage">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-LandingPage" title="com.salesoptimize.landingpage.HomeMenuTest" class="method navigator-link" hash-for-method="HomeMenu">HomeMenu</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LandingPage" title="com.salesoptimize.landingpage.HomeMenuTest" hash-for-method="HomeMenu">HomeMenu</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-LandingPage -->
@@ -143,9 +143,9 @@
                   </a> <!-- LoginSalesOptimize(2, Login) -->
                   <span class="method-name">LoginSalesOptimize</span>
                   <span class="parameters">(2, Login)</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;String.split(String)&quot; because &quot;objecttypeandvalues&quot; is null
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NullPointerException
 	at com.salesoptimize.landingpage.LoginSalesOptimizeTest.LoginSalesOptimize(LoginSalesOptimizeTest.java:21)
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.split(String)&quot; because &quot;objecttypeandvalues&quot; is null
+Caused by: java.lang.NullPointerException
 	at com.salesoptimize.utility.CommonMethod.findElement(CommonMethod.java:60)
 	at com.salesoptimize.utility.CommonMethod.clear(CommonMethod.java:260)
 	at com.salesoptimize.reusablemethods.ReusableMethodsLogin.fillLoginDetails(ReusableMethodsLogin.java:30)
@@ -188,7 +188,7 @@ Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.split(Stri
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;LandingPage&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;LandingPage&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.salesoptimize.utility.ExtentListeners&quot;/&gt;
     &lt;listener class-name=&quot;com.salesoptimize.utility.CustomTestNGReporter&quot;/&gt;
@@ -213,7 +213,7 @@ Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.split(Stri
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;MasterTestNg&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;MasterTestNg&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.salesoptimize.utility.ExtentListeners&quot;/&gt;
     &lt;listener class-name=&quot;com.salesoptimize.utility.CustomTestNGReporter&quot;/&gt;
@@ -290,16 +290,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoginSalesOptimize')
 data.setCell(0, 2, 'com.salesoptimize.landingpage.LoginSalesOptimizeTest')
-data.setCell(0, 3, 3065);
+data.setCell(0, 3, 2356);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'HomeMenu')
 data.setCell(1, 2, 'com.salesoptimize.landingpage.HomeMenuTest')
-data.setCell(1, 3, 2239);
+data.setCell(1, 3, 1058);
 window.suiteTableData['LandingPage']= { tableData: data, tableDiv: 'times-div-LandingPage'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-LandingPage">
               </div> <!-- times-div-LandingPage -->
             </div> <!-- times-div -->
@@ -378,32 +378,32 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">ExtentReportConfig(org.testng.TestRunner@176996c3)</span>
-                <span class="method-start">18852 ms</span>
+                <span class="method-name">ExtentReportConfig(org.testng.TestRunner@5e840abf)</span>
+                <span class="method-start">9638 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">HomeMenu</span>
-                <span class="method-start">19219 ms</span>
+                <span class="method-start">9684 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.salesoptimize.landingpage.LoginSalesOptimizeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">ExtentReportConfig(org.testng.TestRunner@176996c3)</span>
-                <span class="method-start">21475 ms</span>
+                <span class="method-name">ExtentReportConfig(org.testng.TestRunner@5e840abf)</span>
+                <span class="method-start">10746 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">LoginSalesOptimize(2, Login)</span>
-                <span class="method-start">21476 ms</span>
+                <span class="method-start">10746 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.salesoptimize.landingpage.HomeMenuTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">end</span>
-                <span class="method-start">27622 ms</span>
+                <span class="method-start">14345 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
