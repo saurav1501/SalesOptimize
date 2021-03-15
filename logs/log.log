@@ -1,0 +1,3 @@
+2021-03-13 11:22:19 INFO  WebDriverManager:606 - Using geckodriver 0.29.0 (resolved driver for Firefox 86)
+2021-03-13 11:22:19 INFO  WebDriverManager:662 - Exporting webdriver.gecko.driver as C:\Users\SauravKumarSinha\.cache\selenium\geckodriver\win64\0.29.0\geckodriver.exe
+2021-03-13 11:22:38 INFO  HomeMenuTest:13 - clicked on the home button

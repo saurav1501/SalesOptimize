@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LandingPage">
+
+<listeners>
+		<listener class-name="com.salesoptimize.utility.ExtentListeners"></listener>
+		<listener class-name="com.salesoptimize.utility.CustomTestNGReporter"></listener>
+	</listeners>
+		
+	    <test name="LandingPage">
+		<parameter name="rowNum" value="2" />
+		<parameter name="loginSheet" value="Login" />
+	
+	
+		
+		 <classes>
+			<class name="com.salesoptimize.landingpage.HomeMenuTest" />
+				<class name="com.salesoptimize.landingpage.LoginSalesOptimizeTest" />
+		</classes>  
+	</test>
+</suite> 

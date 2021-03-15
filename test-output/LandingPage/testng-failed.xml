@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LandingPage]" guice-stage="DEVELOPMENT">
+  <parameter name="loginSheet" value="Login"/>
+  <parameter name="rowNum" value="2"/>
+  <listeners>
+    <listener class-name="com.salesoptimize.utility.ExtentListeners"/>
+    <listener class-name="com.salesoptimize.utility.CustomTestNGReporter"/>
+  </listeners>
+  <test name="LandingPage">
+    <parameter name="loginSheet" value="Login"/>
+    <parameter name="rowNum" value="2"/>
+    <classes>
+      <class name="com.salesoptimize.landingpage.HomeMenuTest"/>
+      <class name="com.salesoptimize.landingpage.LoginSalesOptimizeTest"/>
+    </classes>
+  </test> <!-- LandingPage -->
+  <test name="LandingPage(failed)">
+    <parameter name="loginSheet" value="Login"/>
+    <parameter name="rowNum" value="2"/>
+    <classes>
+      <class name="com.salesoptimize.landingpage.HomeMenuTest">
+        <methods>
+          <include name="setup"/>
+          <include name="end"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.salesoptimize.landingpage.HomeMenuTest -->
+      <class name="com.salesoptimize.landingpage.LoginSalesOptimizeTest">
+        <methods>
+          <include name="ExtentReportConfig"/>
+          <include name="LoginSalesOptimize" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.salesoptimize.landingpage.LoginSalesOptimizeTest -->
+    </classes>
+  </test> <!-- LandingPage(failed) -->
+</suite> <!-- Failed suite [LandingPage] -->
