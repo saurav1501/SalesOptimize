@@ -1,2 +1,2 @@
-2021-03-15 17:13:43 INFO  WebDriverManager:606 - Using geckodriver 0.29.0 (resolved driver for Firefox 86)
-2021-03-15 17:13:43 INFO  WebDriverManager:662 - Exporting webdriver.gecko.driver as C:\Users\SauravKumarSinha\.cache\selenium\geckodriver\win64\0.29.0\geckodriver.exe
+2021-03-17 22:22:13 INFO  WebDriverManager:606 - Using chromedriver 89.0.4389.23 (resolved driver for Chrome 89)
+2021-03-17 22:22:13 INFO  WebDriverManager:662 - Exporting webdriver.chrome.driver as C:\Users\SauravKumarSinha\.cache\selenium\chromedriver\win32\89.0.4389.23\chromedriver.exe

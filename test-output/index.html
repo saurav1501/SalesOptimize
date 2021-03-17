@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">2 suites, 1 failed test</span>
+      <span class="top-banner-font-1">2 suites, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content failed suite-LandingPage">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-LandingPage" title="com.salesoptimize.landingpage.LoginSalesOptimizeTest" hash-for-method="LoginSalesOptimize(2, Login)">LoginSalesOptimize(2, Login)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-LandingPage" title="com.salesoptimize.landingpage.FirstRecordCaptureDetailTest" hash-for-method="FirstRecordCaptureDetail(2, Dashboard)">FirstRecordCaptureDetail(2, Dashboard)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LandingPage" title="com.salesoptimize.landingpage.SelectIndustryRetailAndFashiClothingTest" hash-for-method="SelectIndustryRetailAndFashiClothing(2, Dashboard)">SelectIndustryRetailAndFashiClothing(2, Dashboard)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-LandingPage -->
@@ -116,7 +121,22 @@
                     <div class="method-list-content passed suite-LandingPage">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-LandingPage" title="com.salesoptimize.landingpage.HomeMenuTest" hash-for-method="HomeMenu">HomeMenu</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-LandingPage" title="com.salesoptimize.landingpage.LoginSalesOptimizeTest" hash-for-method="LoginSalesOptimize">LoginSalesOptimize</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LandingPage" title="com.salesoptimize.landingpage.SearchButtonAndCaptureResultTest" hash-for-method="SearchButtonAndCaptureResult(2, Dashboard)">SearchButtonAndCaptureResult(2, Dashboard)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LandingPage" title="com.salesoptimize.landingpage.SelectBusinessCountryTest" hash-for-method="SelectBusinessCountry(2, Dashboard)">SelectBusinessCountry(2, Dashboard)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-LandingPage" title="com.salesoptimize.landingpage.SelectCompanyTurnover1AndAboveTest" hash-for-method="SelectCompanyTurnover1AndAbove(2, Dashboard)">SelectCompanyTurnover1AndAbove(2, Dashboard)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-LandingPage -->
@@ -134,28 +154,76 @@
           <div class="suite-LandingPage-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.salesoptimize.landingpage.LoginSalesOptimizeTest</span>
+              <span class="class-name">com.salesoptimize.landingpage.SelectIndustryRetailAndFashiClothingTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginSalesOptimize(2, Login)">
-                  </a> <!-- LoginSalesOptimize(2, Login) -->
-                  <span class="method-name">LoginSalesOptimize</span>
-                  <span class="parameters">(2, Login)</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NullPointerException
-	at com.salesoptimize.landingpage.LoginSalesOptimizeTest.LoginSalesOptimize(LoginSalesOptimizeTest.java:21)
-Caused by: java.lang.NullPointerException
-	at com.salesoptimize.utility.CommonMethod.findElement(CommonMethod.java:60)
-	at com.salesoptimize.utility.CommonMethod.clear(CommonMethod.java:260)
-	at com.salesoptimize.reusablemethods.ReusableMethodsLogin.fillLoginDetails(ReusableMethodsLogin.java:30)
-	at com.salesoptimize.reusablemethods.ReusableMethodsLogin.login(ReusableMethodsLogin.java:70)
-	at com.salesoptimize.landingpage.LoginSalesOptimizeTest.LoginSalesOptimize(LoginSalesOptimizeTest.java:18)
-	... 25 more
-... Removed 25 stack frames
+                  <a name="SelectIndustryRetailAndFashiClothing(2, Dashboard)">
+                  </a> <!-- SelectIndustryRetailAndFashiClothing(2, Dashboard) -->
+                  <span class="method-name">SelectIndustryRetailAndFashiClothing</span>
+                  <span class="parameters">(2, Dashboard)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Success expected [Retail] but found []
+	at com.salesoptimize.reusablemethods.ReusableMethodsDashboard.selectIndustryRetailAndFashiClothing(ReusableMethodsDashboard.java:59)
+	at com.salesoptimize.landingpage.SelectIndustryRetailAndFashiClothingTest.SelectIndustryRetailAndFashiClothing(SelectIndustryRetailAndFashiClothingTest.java:16)
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Verify if user is able to login with Valid UserName and password)                  </em>
+(Verify if User is able to select Industry as Retail and Sub Industry as Fashion & Clothing)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LandingPage-class-failed -->
+          <div class="suite-LandingPage-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.salesoptimize.landingpage.FirstRecordCaptureDetailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FirstRecordCaptureDetail(2, Dashboard)">
+                  </a> <!-- FirstRecordCaptureDetail(2, Dashboard) -->
+                  <span class="method-name">FirstRecordCaptureDetail</span>
+                  <span class="parameters">(2, Dashboard)</span>
+                  <div class="stack-trace">java.lang.RuntimeException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#leadlink\-23220301&quot;}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-K5FPFD11&apos;, ip: &apos;192.168.1.35&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SAURAV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64155}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 859bf140318c0c49fb579eb1c969115d
+*** Element info: {Using=id, value=leadlink-23220301}
+	at com.salesoptimize.landingpage.FirstRecordCaptureDetailTest.FirstRecordCaptureDetail(FirstRecordCaptureDetailTest.java:20)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#leadlink\-23220301&quot;}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-K5FPFD11&apos;, ip: &apos;192.168.1.35&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SAURAV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64155}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 859bf140318c0c49fb579eb1c969115d
+*** Element info: {Using=id, value=leadlink-23220301}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.salesoptimize.utility.CommonMethod.findElement(CommonMethod.java:73)
+	at com.salesoptimize.utility.CommonMethod.elementToBeClickable(CommonMethod.java:862)
+	at com.salesoptimize.reusablemethods.ReusableMethodsDashboard.firstRecordCaptureDetail(ReusableMethodsDashboard.java:99)
+	at com.salesoptimize.landingpage.FirstRecordCaptureDetailTest.FirstRecordCaptureDetail(FirstRecordCaptureDetailTest.java:16)
+	... 25 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify if User is able to click on 'Info' for the first record and see values for fields 'Group Turnover', 'Business Location', 'Industry', and 'Sub-Industry')                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -163,16 +231,70 @@ Caused by: java.lang.NullPointerException
           <div class="suite-LandingPage-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.salesoptimize.landingpage.HomeMenuTest</span>
+              <span class="class-name">com.salesoptimize.landingpage.SearchButtonAndCaptureResultTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="HomeMenu">
-                  </a> <!-- HomeMenu -->
-                  <span class="method-name">HomeMenu</span>
+                  <a name="SearchButtonAndCaptureResult(2, Dashboard)">
+                  </a> <!-- SearchButtonAndCaptureResult(2, Dashboard) -->
+                  <span class="method-name">SearchButtonAndCaptureResult</span>
+                  <span class="parameters">(2, Dashboard)</span>
                   <em>
-(Verify if user is able to navigate to home page)                  </em>
+(Verify if User is be able to click on the Search button and see the no. of results returned)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LandingPage-class-passed -->
+          <div class="suite-LandingPage-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.salesoptimize.landingpage.SelectCompanyTurnover1AndAboveTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SelectCompanyTurnover1AndAbove(2, Dashboard)">
+                  </a> <!-- SelectCompanyTurnover1AndAbove(2, Dashboard) -->
+                  <span class="method-name">SelectCompanyTurnover1AndAbove</span>
+                  <span class="parameters">(2, Dashboard)</span>
+                  <em>
+(Verify if User is able to select Company Turnover as 1M and above)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LandingPage-class-passed -->
+          <div class="suite-LandingPage-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.salesoptimize.landingpage.LoginSalesOptimizeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginSalesOptimize">
+                  </a> <!-- LoginSalesOptimize -->
+                  <span class="method-name">LoginSalesOptimize</span>
+                  <em>
+(Verify if User was able to successfully sign in the app)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LandingPage-class-passed -->
+          <div class="suite-LandingPage-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.salesoptimize.landingpage.SelectBusinessCountryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SelectBusinessCountry(2, Dashboard)">
+                  </a> <!-- SelectBusinessCountry(2, Dashboard) -->
+                  <span class="method-name">SelectBusinessCountry</span>
+                  <span class="parameters">(2, Dashboard)</span>
+                  <em>
+(Verify if User was able to select Business Country as United Kingdom)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -194,11 +316,15 @@ Caused by: java.lang.NullPointerException
     &lt;listener class-name=&quot;com.salesoptimize.utility.CustomTestNGReporter&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test name=&quot;LandingPage&quot;&gt;
-    &lt;parameter name=&quot;loginSheet&quot; value=&quot;Login&quot;/&gt;
     &lt;parameter name=&quot;rowNum&quot; value=&quot;2&quot;/&gt;
+    &lt;parameter name=&quot;dashboardSheet&quot; value=&quot;Dashboard&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.salesoptimize.landingpage.HomeMenuTest&quot;/&gt;
       &lt;class name=&quot;com.salesoptimize.landingpage.LoginSalesOptimizeTest&quot;/&gt;
+      &lt;class name=&quot;com.salesoptimize.landingpage.SelectBusinessCountryTest&quot;/&gt;
+      &lt;class name=&quot;com.salesoptimize.landingpage.SelectIndustryRetailAndFashiClothingTest&quot;/&gt;
+      &lt;class name=&quot;com.salesoptimize.landingpage.SelectCompanyTurnover1AndAboveTest&quot;/&gt;
+      &lt;class name=&quot;com.salesoptimize.landingpage.SearchButtonAndCaptureResultTest&quot;/&gt;
+      &lt;class name=&quot;com.salesoptimize.landingpage.FirstRecordCaptureDetailTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- LandingPage --&gt;
 &lt;/suite&gt; &lt;!-- LandingPage --&gt;
@@ -232,7 +358,7 @@ Caused by: java.lang.NullPointerException
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">LandingPage (2 classes)</span>
+                <span class="test-name">LandingPage (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -255,11 +381,27 @@ Caused by: java.lang.NullPointerException
               <span class="test-group-name">Sanity</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">HomeMenu</span>
+                <span class="method-in-group-name">FirstRecordCaptureDetail</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">LoginSalesOptimize</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">SearchButtonAndCaptureResult</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">SelectBusinessCountry</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">SelectCompanyTurnover1AndAbove</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">SelectIndustryRetailAndFashiClothing</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -286,20 +428,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LoginSalesOptimize')
-data.setCell(0, 2, 'com.salesoptimize.landingpage.LoginSalesOptimizeTest')
-data.setCell(0, 3, 2356);
+data.setCell(0, 1, 'FirstRecordCaptureDetail')
+data.setCell(0, 2, 'com.salesoptimize.landingpage.FirstRecordCaptureDetailTest')
+data.setCell(0, 3, 100110);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'HomeMenu')
-data.setCell(1, 2, 'com.salesoptimize.landingpage.HomeMenuTest')
-data.setCell(1, 3, 1058);
+data.setCell(1, 1, 'SelectCompanyTurnover1AndAbove')
+data.setCell(1, 2, 'com.salesoptimize.landingpage.SelectCompanyTurnover1AndAboveTest')
+data.setCell(1, 3, 10733);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'SelectBusinessCountry')
+data.setCell(2, 2, 'com.salesoptimize.landingpage.SelectBusinessCountryTest')
+data.setCell(2, 3, 7314);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'SelectIndustryRetailAndFashiClothing')
+data.setCell(3, 2, 'com.salesoptimize.landingpage.SelectIndustryRetailAndFashiClothingTest')
+data.setCell(3, 3, 5269);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'LoginSalesOptimize')
+data.setCell(4, 2, 'com.salesoptimize.landingpage.LoginSalesOptimizeTest')
+data.setCell(4, 3, 4594);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'SearchButtonAndCaptureResult')
+data.setCell(5, 2, 'com.salesoptimize.landingpage.SearchButtonAndCaptureResultTest')
+data.setCell(5, 3, 4474);
 window.suiteTableData['LandingPage']= { tableData: data, tableDiv: 'times-div-LandingPage'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-LandingPage">
               </div> <!-- times-div-LandingPage -->
             </div> <!-- times-div -->
@@ -345,11 +503,47 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-LandingPage" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.salesoptimize.landingpage.LoginSalesOptimizeTest</span>
+              <span class="ignored-class-name">com.salesoptimize.landingpage.SearchButtonAndCaptureResultTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">end</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.salesoptimize.landingpage.SelectCompanyTurnover1AndAboveTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">end</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.salesoptimize.landingpage.SelectIndustryRetailAndFashiClothingTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">end</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.salesoptimize.landingpage.SelectBusinessCountryTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">end</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.salesoptimize.landingpage.FirstRecordCaptureDetailTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setup</span>
                 <br/>
@@ -372,38 +566,84 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.salesoptimize.landingpage.HomeMenuTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.salesoptimize.landingpage.LoginSalesOptimizeTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">ExtentReportConfig(org.testng.TestRunner@5e840abf)</span>
-                <span class="method-start">9638 ms</span>
+                <span class="method-name">ExtentReportConfig(org.testng.TestRunner@12aa4996)</span>
+                <span class="method-start">11763 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">HomeMenu</span>
-                <span class="method-start">9684 ms</span>
+                <span class="method-name">LoginSalesOptimize</span>
+                <span class="method-start">11989 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.salesoptimize.landingpage.LoginSalesOptimizeTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.salesoptimize.landingpage.SelectBusinessCountryTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">ExtentReportConfig(org.testng.TestRunner@5e840abf)</span>
-                <span class="method-start">10746 ms</span>
+                <span class="method-name">ExtentReportConfig(org.testng.TestRunner@12aa4996)</span>
+                <span class="method-start">16610 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SelectBusinessCountry(2, Dashboard)</span>
+                <span class="method-start">16610 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.salesoptimize.landingpage.SelectIndustryRetailAndFashiClothingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">ExtentReportConfig(org.testng.TestRunner@12aa4996)</span>
+                <span class="method-start">23928 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">LoginSalesOptimize(2, Login)</span>
-                <span class="method-start">10746 ms</span>
+                <span class="method-name">SelectIndustryRetailAndFashiClothing(2, Dashboard)</span>
+                <span class="method-start">23928 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.salesoptimize.landingpage.HomeMenuTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.salesoptimize.landingpage.SelectCompanyTurnover1AndAboveTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">ExtentReportConfig(org.testng.TestRunner@12aa4996)</span>
+                <span class="method-start">33544 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SelectCompanyTurnover1AndAbove(2, Dashboard)</span>
+                <span class="method-start">33545 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.salesoptimize.landingpage.SearchButtonAndCaptureResultTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">ExtentReportConfig(org.testng.TestRunner@12aa4996)</span>
+                <span class="method-start">44282 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SearchButtonAndCaptureResult(2, Dashboard)</span>
+                <span class="method-start">44282 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.salesoptimize.landingpage.FirstRecordCaptureDetailTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">ExtentReportConfig(org.testng.TestRunner@12aa4996)</span>
+                <span class="method-start">48759 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">FirstRecordCaptureDetail(2, Dashboard)</span>
+                <span class="method-start">48759 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.salesoptimize.landingpage.LoginSalesOptimizeTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">end</span>
-                <span class="method-start">14345 ms</span>
+                <span class="method-start">152833 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

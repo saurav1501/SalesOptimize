@@ -21,13 +21,13 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
-
 import com.aventstack.extentreports.AnalysisStrategy;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.salesoptimize.reusablemethods.ReusableMethodsDashboard;
 import com.salesoptimize.reusablemethods.ReusableMethodsLogin;
 import com.salesoptimize.reusablemethods.ReusableMethodsNavigation;
 
@@ -60,10 +60,11 @@ public class BaseClass {
 	public static String browserName;
 	public static ReusableMethodsNavigation navigation = new ReusableMethodsNavigation();
 	public static ReusableMethodsLogin login = new ReusableMethodsLogin();
+	public static ReusableMethodsDashboard dashboard = new ReusableMethodsDashboard();
 	
 	@BeforeSuite
 	public void setup() throws Exception {
-		data = new XlsReader(System.getProperty("user.dir") + "/TestData/ArcTest.xlsx");
+		data = new XlsReader(System.getProperty("user.dir") + "/TestData/SalesTest.xlsx");
 		prop = new Properties();
 
 		System.out.println(System.getenv("agentName"));
@@ -156,9 +157,9 @@ public class BaseClass {
 			prop.load(file1);
 			baseURL = prop.getProperty("env");
 			driver.get(baseURL);
-		/*	username=prop.getProperty("userName");
+			username=prop.getProperty("userName");
 			password=prop.getProperty("Password");
-			System.out.println(baseURL);
+			/*System.out.println(baseURL);
 			System.out.println(username);
 			System.out.println(password);
 		*/
@@ -168,13 +169,13 @@ public class BaseClass {
 			prop.load(file2);
 			baseURL = prop.getProperty("env");
 			driver.get(baseURL);
-			/*username=prop.getProperty("userName");
+			username=prop.getProperty("userName");
 			password=prop.getProperty("Password");
-			System.out.println(baseURL);
+			/*System.out.println(baseURL);
 			System.out.println(username);
 			System.out.println(password);
-		*/
-
+		
+*/
 		}
 	    		
 		Thread.sleep(3000);
@@ -213,7 +214,7 @@ public class BaseClass {
 
 	@AfterSuite(alwaysRun = true)
 	public void end() {
-		driver.close();
+		//driver.quit();
 		System.out.println("EndSuite");
 	}
 	

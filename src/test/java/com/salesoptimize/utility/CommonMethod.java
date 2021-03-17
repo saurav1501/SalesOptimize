@@ -16,6 +16,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 import java.util.Random;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -62,7 +63,7 @@ public class CommonMethod extends BaseClass {
 
 		String objectvalue = splits[1];
 
-		CommonMethod.testlog("Pass", "Finding Locator " +objecttypeandvalues);
+		//CommonMethod.testlog("Pass", "Finding Locator " +objecttypeandvalues);
 
 		System.out.println("obj val: " + objectvalue);
 
@@ -364,6 +365,21 @@ public class CommonMethod extends BaseClass {
 		Thread.sleep(2);
 
 	}
+	
+	public static void switchToNewTab() throws InterruptedException{
+		Set<String> handles = driver.getWindowHandles();
+	    String currentHandle = driver.getWindowHandle();
+	    for (String handle : handles) {
+
+	     if (!handle .equals(currentHandle))
+	     {
+	         driver.switchTo().window(handle);
+	     }
+	   }
+
+	}
+	
+	
 	public static void switchToIframe(String objectLocato) throws IOException {
 		driver.switchTo().frame(findElement(objectLocato));
 		
@@ -843,7 +859,7 @@ public class CommonMethod extends BaseClass {
 
 	public static WebElement elementToBeClickable(String objectlocator, int TimeinSeconds) throws IOException {
 		 wait = new WebDriverWait(driver, TimeinSeconds);
-		return wait.until(ExpectedConditions.elementToBeClickable(findElement(objectlocator)));
+		 return wait.until(ExpectedConditions.elementToBeClickable(findElement(objectlocator)));
 	}
 
 	public static void displayhiddenElement(String objectLocator) throws IOException {
@@ -863,15 +879,6 @@ public class CommonMethod extends BaseClass {
 		((JavascriptExecutor) driver)
 				.executeScript("document.getElementById('" + id + "').removeAttribute('readonly',0);");
 
-	}
-
-	public static void ArcSpecifictoggle(String objectLocator) throws IOException, InterruptedException {
-
-		click("ProjectsSideBar");
-		moveToElement(objectLocator);
-		Thread.sleep(2000);
-		click(objectLocator);
-		testlog("Pass", "Clicking " + objectLocator);
 	}
 
 	public static void fluentWait(final String objectLocater) {
@@ -929,5 +936,8 @@ public class CommonMethod extends BaseClass {
 			e.printStackTrace();
 		}
 	}
-
+   public static void dragAndDrop(String start,String end) throws IOException {
+	Actions action = new Actions(driver);
+	action.dragAndDrop(CommonMethod.findElement(start), CommonMethod.findElement(end)).build().perform();;
+   }
 }

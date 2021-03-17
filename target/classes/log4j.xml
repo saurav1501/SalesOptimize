@@ -14,7 +14,7 @@
 	    <param name="append" value="false" />
 	    <param name="maxFileSize" value="10MB" />
 	    <param name="maxBackupIndex" value="10" />
-	    <!-- <param name="file" value="${catalina.home}/logs/log.log" /> -->
+	    <param name="file" value="${catalina.home}/logs/log.log" />
 	    <param name="file" value="logs/log.log" />
 	    <layout class="org.apache.log4j.PatternLayout">
 		<param name="ConversionPattern" 
@@ -24,8 +24,8 @@
 
 	<root>
 		<level value="INFO" />
-		<appender-ref ref="console" />
+	<!-- 	<appender-ref ref="console" /> -->
 		<appender-ref ref="file" />
 	</root>
 
-</log4j:configuration>
+</log4j:configuration> 

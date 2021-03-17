@@ -1,37 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [LandingPage]">
-  <parameter name="loginSheet" value="Login"/>
   <parameter name="rowNum" value="2"/>
+  <parameter name="dashboardSheet" value="Dashboard"/>
   <listeners>
     <listener class-name="com.salesoptimize.utility.ExtentListeners"/>
     <listener class-name="com.salesoptimize.utility.CustomTestNGReporter"/>
   </listeners>
   <test name="LandingPage">
-    <parameter name="loginSheet" value="Login"/>
     <parameter name="rowNum" value="2"/>
+    <parameter name="dashboardSheet" value="Dashboard"/>
     <classes>
-      <class name="com.salesoptimize.landingpage.HomeMenuTest"/>
       <class name="com.salesoptimize.landingpage.LoginSalesOptimizeTest"/>
+      <class name="com.salesoptimize.landingpage.SelectBusinessCountryTest"/>
+      <class name="com.salesoptimize.landingpage.SelectIndustryRetailAndFashiClothingTest"/>
+      <class name="com.salesoptimize.landingpage.SelectCompanyTurnover1AndAboveTest"/>
+      <class name="com.salesoptimize.landingpage.SearchButtonAndCaptureResultTest"/>
+      <class name="com.salesoptimize.landingpage.FirstRecordCaptureDetailTest"/>
     </classes>
   </test> <!-- LandingPage -->
   <test name="LandingPage(failed)">
-    <parameter name="loginSheet" value="Login"/>
     <parameter name="rowNum" value="2"/>
+    <parameter name="dashboardSheet" value="Dashboard"/>
     <classes>
-      <class name="com.salesoptimize.landingpage.HomeMenuTest">
+      <class name="com.salesoptimize.landingpage.SearchButtonAndCaptureResultTest">
+        <methods>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.salesoptimize.landingpage.SearchButtonAndCaptureResultTest -->
+      <class name="com.salesoptimize.landingpage.SelectCompanyTurnover1AndAboveTest">
+        <methods>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.salesoptimize.landingpage.SelectCompanyTurnover1AndAboveTest -->
+      <class name="com.salesoptimize.landingpage.SelectIndustryRetailAndFashiClothingTest">
+        <methods>
+          <include name="SelectIndustryRetailAndFashiClothing" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.salesoptimize.landingpage.SelectIndustryRetailAndFashiClothingTest -->
+      <class name="com.salesoptimize.landingpage.LoginSalesOptimizeTest">
         <methods>
           <include name="setup"/>
           <include name="end"/>
           <include name="ExtentReportConfig"/>
         </methods>
-      </class> <!-- com.salesoptimize.landingpage.HomeMenuTest -->
-      <class name="com.salesoptimize.landingpage.LoginSalesOptimizeTest">
+      </class> <!-- com.salesoptimize.landingpage.LoginSalesOptimizeTest -->
+      <class name="com.salesoptimize.landingpage.SelectBusinessCountryTest">
         <methods>
           <include name="ExtentReportConfig"/>
-          <include name="LoginSalesOptimize" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.salesoptimize.landingpage.LoginSalesOptimizeTest -->
+      </class> <!-- com.salesoptimize.landingpage.SelectBusinessCountryTest -->
+      <class name="com.salesoptimize.landingpage.FirstRecordCaptureDetailTest">
+        <methods>
+          <include name="FirstRecordCaptureDetail" invocation-numbers="0"/>
+          <include name="ExtentReportConfig"/>
+        </methods>
+      </class> <!-- com.salesoptimize.landingpage.FirstRecordCaptureDetailTest -->
     </classes>
   </test> <!-- LandingPage(failed) -->
 </suite> <!-- Failed suite [LandingPage] -->

@@ -9,13 +9,16 @@
 		
 	    <test name="LandingPage">
 		<parameter name="rowNum" value="2" />
-		<parameter name="loginSheet" value="Login" />
+		<parameter name="dashboardSheet" value="Dashboard" />
 	
 	
-		
 		 <classes>
-			<class name="com.salesoptimize.landingpage.HomeMenuTest" />
 				<class name="com.salesoptimize.landingpage.LoginSalesOptimizeTest" />
+				<class name="com.salesoptimize.landingpage.SelectBusinessCountryTest" />
+				<class name="com.salesoptimize.landingpage.SelectIndustryRetailAndFashiClothingTest" /> 
+				<class name="com.salesoptimize.landingpage.SelectCompanyTurnover1AndAboveTest" />
+				<class name="com.salesoptimize.landingpage.SearchButtonAndCaptureResultTest" />
+		        <class name="com.salesoptimize.landingpage.FirstRecordCaptureDetailTest" /> 
 		</classes>  
 	</test>
 </suite> 

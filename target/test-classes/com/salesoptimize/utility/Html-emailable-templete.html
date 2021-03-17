@@ -1,8 +1,7 @@
 <head>
 <style>
 a:link {
-  color: green;
-  background-color: red;
+  color: black;
   text-decoration: underline;
 }
 a:visited {
@@ -23,41 +22,47 @@ a:active {
 </style>
 <style>
 table, th, td {
-  border: 1px solid black;
+  border: 2px solid black;
   border-collapse: collapse;
 }
 th, td {
 
-  padding: 1px;
+  padding: 2px;
   text-align: center; 
 }
 table {
 
   border-collapse: collapse;
-  border: 2px solid gray;
+  border: 2px solid #FF0000;
   float: left;
-  margin:1px;
-  border-spacing: 1px;
+  margin:2px;
+  border-spacing: 2px;
   background-color: rgb(100,0,0)
 }
 table {
 
   border-collapse: collapse;
-  border: 1px CC9933;
+  border: 2px solid #FF0000;
   float: left;
-  margin:1px;
-  border-spacing: 1px;
+  margin:2px;
+  border-spacing: 2px;
   background-color: FF3333
 }
 
 </style>
 </head>
 <body>
-    <center><b><h1><font color="SandyBrown">SalesOptimize_Automation_Testing_Report</font></h1></b></center>
+    <center><b><h1><font color="#17202A">SalesOptimize_Automation_Testing_Report</font></h1></b></center>
+    
+    <center><b><h2><img src="https://i.postimg.cc/rpJ7Hmd9/Logo.png" style="width:500px;height:60px;"></h2></b></center>
+
     <center><b><h3><a href="https://test.usgbc.org/job/Arc/ExtendReport/ARC_UITestingReport_Building.html" target="_blank">Click Here To View SalesOptimize Report</a></p></b></h2></center> 
-     <table style="width:80%"cellspacing="1">
+ 
+    <table style="width:100%" ; cellspacing="1"; margin-left:auto;margin-right:auto;>
+    
       <thead>
         <tr>
+         <tr bgcolor= #33AAFF>
           <th>TOTAL_TEST_CASE</th>
           <th>PASSED</th>
           <th>SKIPPED</th>
@@ -71,15 +76,16 @@ table {
        </thead> 
      $Test_Case_Summary$
     </table>
-    <br><br>
-    <table id="summary" cellspacing="1" style="width:80%">
+    <br><br><br><br>
+        
+    <table id="summary" cellspacing="1" style="width:100%">
       <thead>
-        <tr bgcolor= 33FFCC>
+        <tr bgcolor= #33AAFF>
           <th>TEST_CASE_NAME</th>
          <!--  <th>METHOD_NAME</th>
           <th>RATINGS</th> -->
           <th>STATUS</th>
-          <th>START_TIME</th>
+          <!-- <th>START_TIME</th>  -->
           <th>EXE_TIME</th>
           <th>TEST_CASE_DESCRIPTION_DETAILS</th>
         </tr>

@@ -1,53 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="2" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="LandingPage" duration-ms="4532" started-at="2021-03-15T22:07:25Z" finished-at="2021-03-15T22:07:30Z">
+  <suite name="LandingPage" duration-ms="140700" started-at="2021-03-17T19:01:38Z" finished-at="2021-03-17T19:03:59Z">
     <groups>
       <group name="Sanity">
-        <method signature="HomeMenuTest.HomeMenu()[pri:0, instance:com.salesoptimize.landingpage.HomeMenuTest@3498ed]" name="HomeMenu" class="com.salesoptimize.landingpage.HomeMenuTest"/>
-        <method signature="LoginSalesOptimizeTest.LoginSalesOptimize(int, java.lang.String)[pri:0, instance:com.salesoptimize.landingpage.LoginSalesOptimizeTest@1a407d53]" name="LoginSalesOptimize" class="com.salesoptimize.landingpage.LoginSalesOptimizeTest"/>
+        <method signature="FirstRecordCaptureDetailTest.FirstRecordCaptureDetail(int, java.lang.String)[pri:0, instance:com.salesoptimize.landingpage.FirstRecordCaptureDetailTest@3fb6a447]" name="FirstRecordCaptureDetail" class="com.salesoptimize.landingpage.FirstRecordCaptureDetailTest"/>
+        <method signature="LoginSalesOptimizeTest.LoginSalesOptimize()[pri:0, instance:com.salesoptimize.landingpage.LoginSalesOptimizeTest@21bcffb5]" name="LoginSalesOptimize" class="com.salesoptimize.landingpage.LoginSalesOptimizeTest"/>
+        <method signature="SearchButtonAndCaptureResultTest.SearchButtonAndCaptureResult(int, java.lang.String)[pri:0, instance:com.salesoptimize.landingpage.SearchButtonAndCaptureResultTest@7a5d012c]" name="SearchButtonAndCaptureResult" class="com.salesoptimize.landingpage.SearchButtonAndCaptureResultTest"/>
+        <method signature="SelectBusinessCountryTest.SelectBusinessCountry(int, java.lang.String)[pri:0, instance:com.salesoptimize.landingpage.SelectBusinessCountryTest@380fb434]" name="SelectBusinessCountry" class="com.salesoptimize.landingpage.SelectBusinessCountryTest"/>
+        <method signature="SelectCompanyTurnover1AndAboveTest.SelectCompanyTurnover1AndAbove(int, java.lang.String)[pri:0, instance:com.salesoptimize.landingpage.SelectCompanyTurnover1AndAboveTest@3cda1055]" name="SelectCompanyTurnover1AndAbove" class="com.salesoptimize.landingpage.SelectCompanyTurnover1AndAboveTest"/>
+        <method signature="SelectIndustryRetailAndFashiClothingTest.SelectIndustryRetailAndFashiClothing(int, java.lang.String)[pri:0, instance:com.salesoptimize.landingpage.SelectIndustryRetailAndFashiClothingTest@668bc3d5]" name="SelectIndustryRetailAndFashiClothing" class="com.salesoptimize.landingpage.SelectIndustryRetailAndFashiClothingTest"/>
       </group> <!-- Sanity -->
     </groups>
-    <test name="LandingPage" duration-ms="4532" started-at="2021-03-15T22:07:25Z" finished-at="2021-03-15T22:07:30Z">
-      <class name="com.salesoptimize.landingpage.HomeMenuTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.salesoptimize.landingpage.HomeMenuTest@3498ed]" name="setup" is-config="true" duration-ms="9633" started-at="2021-03-16T03:37:16Z" finished-at="2021-03-16T03:37:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="ExtentReportConfig(org.testng.ITestContext)[pri:0, instance:com.salesoptimize.landingpage.HomeMenuTest@3498ed]" name="ExtentReportConfig" is-config="true" duration-ms="45" started-at="2021-03-16T03:37:25Z" finished-at="2021-03-16T03:37:25Z">
+    <test name="LandingPage" duration-ms="140700" started-at="2021-03-17T19:01:38Z" finished-at="2021-03-17T19:03:59Z">
+      <class name="com.salesoptimize.landingpage.SelectBusinessCountryTest">
+        <test-method status="PASS" signature="ExtentReportConfig(org.testng.ITestContext)[pri:0, instance:com.salesoptimize.landingpage.SelectBusinessCountryTest@380fb434]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2021-03-18T00:31:43Z" finished-at="2021-03-18T00:31:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5e840abf]]>
+                <![CDATA[org.testng.TestRunner@12aa4996]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtentReportConfig -->
-        <test-method status="PASS" signature="HomeMenu()[pri:0, instance:com.salesoptimize.landingpage.HomeMenuTest@3498ed]" name="HomeMenu" duration-ms="1058" started-at="2021-03-16T03:37:25Z" description="Verify if user is able to navigate to home page" finished-at="2021-03-16T03:37:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomeMenu -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.salesoptimize.landingpage.HomeMenuTest@3498ed]" name="end" is-config="true" duration-ms="508" started-at="2021-03-16T03:37:30Z" finished-at="2021-03-16T03:37:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.salesoptimize.landingpage.HomeMenuTest -->
-      <class name="com.salesoptimize.landingpage.LoginSalesOptimizeTest">
-        <test-method status="PASS" signature="ExtentReportConfig(org.testng.ITestContext)[pri:0, instance:com.salesoptimize.landingpage.LoginSalesOptimizeTest@1a407d53]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2021-03-16T03:37:26Z" finished-at="2021-03-16T03:37:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@5e840abf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtentReportConfig -->
-        <test-method status="FAIL" signature="LoginSalesOptimize(int, java.lang.String)[pri:0, instance:com.salesoptimize.landingpage.LoginSalesOptimizeTest@1a407d53]" name="LoginSalesOptimize" duration-ms="2356" started-at="2021-03-16T03:37:26Z" description="Verify if user is able to login with Valid UserName and password" finished-at="2021-03-16T03:37:29Z">
+        <test-method status="PASS" signature="SelectBusinessCountry(int, java.lang.String)[pri:0, instance:com.salesoptimize.landingpage.SelectBusinessCountryTest@380fb434]" name="SelectBusinessCountry" duration-ms="7314" started-at="2021-03-18T00:31:43Z" description="Verify if User was able to select Business Country as United Kingdom" finished-at="2021-03-18T00:31:50Z">
           <params>
             <param index="0">
               <value>
@@ -56,17 +35,62 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[Login]]>
+                <![CDATA[Dashboard]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectBusinessCountry -->
+      </class> <!-- com.salesoptimize.landingpage.SelectBusinessCountryTest -->
+      <class name="com.salesoptimize.landingpage.FirstRecordCaptureDetailTest">
+        <test-method status="PASS" signature="ExtentReportConfig(org.testng.ITestContext)[pri:0, instance:com.salesoptimize.landingpage.FirstRecordCaptureDetailTest@3fb6a447]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2021-03-18T00:32:15Z" finished-at="2021-03-18T00:32:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@12aa4996]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="FAIL" signature="FirstRecordCaptureDetail(int, java.lang.String)[pri:0, instance:com.salesoptimize.landingpage.FirstRecordCaptureDetailTest@3fb6a447]" name="FirstRecordCaptureDetail" duration-ms="100110" started-at="2021-03-18T00:32:15Z" description="Verify if User is able to click on &#039;Info&#039; for the first record and see values for fields &#039;Group Turnover&#039;, &#039;Business Location&#039;, &#039;Industry&#039;, and &#039;Sub-Industry&#039;" finished-at="2021-03-18T00:33:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dashboard]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[java.lang.NullPointerException]]>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#leadlink\-23220301"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-K5FPFD11', ip: '192.168.1.35', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SAURAV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64155}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 859bf140318c0c49fb579eb1c969115d
+*** Element info: {Using=id, value=leadlink-23220301}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
-	at com.salesoptimize.landingpage.LoginSalesOptimizeTest.LoginSalesOptimize(LoginSalesOptimizeTest.java:21)
+              <![CDATA[java.lang.RuntimeException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#leadlink\-23220301"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-K5FPFD11', ip: '192.168.1.35', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SAURAV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64155}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 859bf140318c0c49fb579eb1c969115d
+*** Element info: {Using=id, value=leadlink-23220301}
+	at com.salesoptimize.landingpage.FirstRecordCaptureDetailTest.FirstRecordCaptureDetail(FirstRecordCaptureDetailTest.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -92,23 +116,197 @@
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-Caused by: java.lang.NullPointerException
-	at com.salesoptimize.utility.CommonMethod.findElement(CommonMethod.java:60)
-	at com.salesoptimize.utility.CommonMethod.clear(CommonMethod.java:260)
-	at com.salesoptimize.reusablemethods.ReusableMethodsLogin.fillLoginDetails(ReusableMethodsLogin.java:30)
-	at com.salesoptimize.reusablemethods.ReusableMethodsLogin.login(ReusableMethodsLogin.java:70)
-	at com.salesoptimize.landingpage.LoginSalesOptimizeTest.LoginSalesOptimize(LoginSalesOptimizeTest.java:18)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#leadlink\-23220301"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-K5FPFD11', ip: '192.168.1.35', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\SAURAV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64155}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 859bf140318c0c49fb579eb1c969115d
+*** Element info: {Using=id, value=leadlink-23220301}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.salesoptimize.utility.CommonMethod.findElement(CommonMethod.java:73)
+	at com.salesoptimize.utility.CommonMethod.elementToBeClickable(CommonMethod.java:862)
+	at com.salesoptimize.reusablemethods.ReusableMethodsDashboard.firstRecordCaptureDetail(ReusableMethodsDashboard.java:99)
+	at com.salesoptimize.landingpage.FirstRecordCaptureDetailTest.FirstRecordCaptureDetail(FirstRecordCaptureDetailTest.java:16)
 	... 25 more
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- FirstRecordCaptureDetail -->
+      </class> <!-- com.salesoptimize.landingpage.FirstRecordCaptureDetailTest -->
+      <class name="com.salesoptimize.landingpage.SelectCompanyTurnover1AndAboveTest">
+        <test-method status="PASS" signature="ExtentReportConfig(org.testng.ITestContext)[pri:0, instance:com.salesoptimize.landingpage.SelectCompanyTurnover1AndAboveTest@3cda1055]" name="ExtentReportConfig" is-config="true" duration-ms="1" started-at="2021-03-18T00:32:00Z" finished-at="2021-03-18T00:32:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@12aa4996]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="SelectCompanyTurnover1AndAbove(int, java.lang.String)[pri:0, instance:com.salesoptimize.landingpage.SelectCompanyTurnover1AndAboveTest@3cda1055]" name="SelectCompanyTurnover1AndAbove" duration-ms="10733" started-at="2021-03-18T00:32:00Z" description="Verify if User is able to select Company Turnover as 1M and above" finished-at="2021-03-18T00:32:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dashboard]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectCompanyTurnover1AndAbove -->
+      </class> <!-- com.salesoptimize.landingpage.SelectCompanyTurnover1AndAboveTest -->
+      <class name="com.salesoptimize.landingpage.SearchButtonAndCaptureResultTest">
+        <test-method status="PASS" signature="SearchButtonAndCaptureResult(int, java.lang.String)[pri:0, instance:com.salesoptimize.landingpage.SearchButtonAndCaptureResultTest@7a5d012c]" name="SearchButtonAndCaptureResult" duration-ms="4474" started-at="2021-03-18T00:32:10Z" description="Verify if User is be able to click on the Search button and see the no. of results returned" finished-at="2021-03-18T00:32:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dashboard]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchButtonAndCaptureResult -->
+        <test-method status="PASS" signature="ExtentReportConfig(org.testng.ITestContext)[pri:0, instance:com.salesoptimize.landingpage.SearchButtonAndCaptureResultTest@7a5d012c]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2021-03-18T00:32:10Z" finished-at="2021-03-18T00:32:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@12aa4996]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+      </class> <!-- com.salesoptimize.landingpage.SearchButtonAndCaptureResultTest -->
+      <class name="com.salesoptimize.landingpage.SelectIndustryRetailAndFashiClothingTest">
+        <test-method status="FAIL" signature="SelectIndustryRetailAndFashiClothing(int, java.lang.String)[pri:0, instance:com.salesoptimize.landingpage.SelectIndustryRetailAndFashiClothingTest@668bc3d5]" name="SelectIndustryRetailAndFashiClothing" duration-ms="5269" started-at="2021-03-18T00:31:50Z" description="Verify if User is able to select Industry as Retail and Sub Industry as Fashion &amp; Clothing" finished-at="2021-03-18T00:31:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dashboard]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Success expected [Retail] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Success expected [Retail] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at com.salesoptimize.reusablemethods.ReusableMethodsDashboard.selectIndustryRetailAndFashiClothing(ReusableMethodsDashboard.java:59)
+	at com.salesoptimize.landingpage.SelectIndustryRetailAndFashiClothingTest.SelectIndustryRetailAndFashiClothing(SelectIndustryRetailAndFashiClothingTest.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectIndustryRetailAndFashiClothing -->
+        <test-method status="PASS" signature="ExtentReportConfig(org.testng.ITestContext)[pri:0, instance:com.salesoptimize.landingpage.SelectIndustryRetailAndFashiClothingTest@668bc3d5]" name="ExtentReportConfig" is-config="true" duration-ms="0" started-at="2021-03-18T00:31:50Z" finished-at="2021-03-18T00:31:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@12aa4996]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+      </class> <!-- com.salesoptimize.landingpage.SelectIndustryRetailAndFashiClothingTest -->
+      <class name="com.salesoptimize.landingpage.LoginSalesOptimizeTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.salesoptimize.landingpage.LoginSalesOptimizeTest@21bcffb5]" name="setup" is-config="true" duration-ms="11749" started-at="2021-03-18T00:31:26Z" finished-at="2021-03-18T00:31:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="ExtentReportConfig(org.testng.ITestContext)[pri:0, instance:com.salesoptimize.landingpage.LoginSalesOptimizeTest@21bcffb5]" name="ExtentReportConfig" is-config="true" duration-ms="226" started-at="2021-03-18T00:31:38Z" finished-at="2021-03-18T00:31:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@12aa4996]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReportConfig -->
+        <test-method status="PASS" signature="LoginSalesOptimize()[pri:0, instance:com.salesoptimize.landingpage.LoginSalesOptimizeTest@21bcffb5]" name="LoginSalesOptimize" duration-ms="4594" started-at="2021-03-18T00:31:38Z" description="Verify if User was able to successfully sign in the app" finished-at="2021-03-18T00:31:43Z">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- LoginSalesOptimize -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.salesoptimize.landingpage.LoginSalesOptimizeTest@21bcffb5]" name="end" is-config="true" duration-ms="0" started-at="2021-03-18T00:33:59Z" finished-at="2021-03-18T00:33:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
       </class> <!-- com.salesoptimize.landingpage.LoginSalesOptimizeTest -->
     </test> <!-- LandingPage -->
   </suite> <!-- LandingPage -->
-  <suite name="MasterTestNg" duration-ms="0" started-at="2021-03-15T22:07:31Z" finished-at="2021-03-15T22:07:31Z">
+  <suite name="MasterTestNg" duration-ms="0" started-at="2021-03-17T19:03:59Z" finished-at="2021-03-17T19:03:59Z">
     <groups>
     </groups>
   </suite> <!-- MasterTestNg -->

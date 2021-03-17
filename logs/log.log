@@ -1,3 +1,2 @@
-2021-03-16 03:37:17 INFO  WebDriverManager:606 - Using geckodriver 0.29.0 (resolved driver for Firefox 86)
-2021-03-16 03:37:17 INFO  WebDriverManager:662 - Exporting webdriver.gecko.driver as C:\Users\SauravKumarSinha\.cache\selenium\geckodriver\win64\0.29.0\geckodriver.exe
-2021-03-16 03:37:26 INFO  HomeMenuTest:13 - clicked on the home button
+2021-03-18 00:31:29 INFO  WebDriverManager:606 - Using chromedriver 89.0.4389.23 (resolved driver for Chrome 89)
+2021-03-18 00:31:29 INFO  WebDriverManager:662 - Exporting webdriver.chrome.driver as C:\Users\SauravKumarSinha\.cache\selenium\chromedriver\win32\89.0.4389.23\chromedriver.exe

@@ -142,12 +142,12 @@ public class CustomTestNGReporter implements IReporter {
 					retBuf.append("</td>");
 				*/	
 					/* Total method count. */
-					retBuf.append("<td bgcolor=009999>");
+					retBuf.append("<td bgcolor=d8fdd8>");
 					retBuf.append(totalTestCount);
 					retBuf.append("</td>");
 					
 					/* Passed method count. */
-					retBuf.append("<td bgcolor=33FF00>");
+					retBuf.append("<td bgcolor=#90ee90>");
 					retBuf.append(totalTestPassed);
 					retBuf.append("</td>");
 					
@@ -157,7 +157,7 @@ public class CustomTestNGReporter implements IReporter {
 					retBuf.append("</td>");
 					
 					/* Failed method count. */
-					retBuf.append("<td bgcolor=CC3333>");
+					retBuf.append("<td bgcolor=#ff7f7f>");
 					retBuf.append(totalTestFailed);
 					retBuf.append("</td>");
 					
@@ -177,32 +177,32 @@ public class CustomTestNGReporter implements IReporter {
 					}*/
 					
 					/* Append browser type. */
-					retBuf.append("<td bgcolor=009966>");
-					retBuf.append(browserName.substring(0, 1).toUpperCase());
+					retBuf.append("<td bgcolor=d8fdd8>");
+					retBuf.append(browserName.substring(0,6).toUpperCase());
 					retBuf.append("</td>");
 					
-					retBuf.append("<td bgcolor=009999>");
-					retBuf.append(environment.substring(0, 1).toUpperCase());
+					retBuf.append("<td bgcolor=d8fdd8>");
+					retBuf.append(environment.substring(0, 3).toUpperCase());
 					retBuf.append("</td>");
 					
 					
 					/* Start Date*/
 					Date startDate = testObj.getStartDate();
-					retBuf.append("<td bgcolor=0099CC>");
+					retBuf.append("<td bgcolor=d8fdd8>");
 					retBuf.append(this.getDateInStringFormat(startDate));
 					retBuf.append("</td>");
 					
 					/* End Date*/
 					Date endDate = testObj.getEndDate();
 				
-					retBuf.append("<td bgcolor=0099FF>");
+					retBuf.append("<td bgcolor=d8fdd8>");
 					retBuf.append(this.getDateInStringFormat(endDate));
 					retBuf.append("</td>");
 					
 					/* Execute Time */
 					long deltaTime = endDate.getTime() - startDate.getTime();
 					String deltaTimeStr = this.convertDeltaTimeToString(deltaTime);
-					retBuf.append("<td bgcolor=00CCFF>");
+					retBuf.append("<td bgcolor=d8fdd8>");
 					retBuf.append(deltaTimeStr);
 					retBuf.append("</td>");
 					
@@ -322,11 +322,11 @@ public class CustomTestNGReporter implements IReporter {
 			if(!passedReault)
 			{
 				resultTitle += "Failed ";
-				color = "red";
+				color = "ffcccb";
 			}else
 			{
 				resultTitle += "Passed ";
-				color = "green";
+				color = "90ee90";
 			}
 		}
 		
@@ -345,9 +345,10 @@ public class CustomTestNGReporter implements IReporter {
 			String description = "";
 			String status = "";
 			String exceptionMessage = "";
+			testClassName = testResult.getMethod().getMethodName()+"Test";
 			
 			//Get testClassName
-			testClassName = testResult.getTestClass().getName();
+			//testClassName = testResult.getTestClass().getName();
 				
 			//Get testMethodName
 			//testMethodName = testResult.getMethod().getMethodName();
@@ -391,7 +392,7 @@ public class CustomTestNGReporter implements IReporter {
 				exceptionMessage = sw.toString();
 			}
 			
-			retStrBuf.append("<tr bgcolor= 33FFCC>");
+			retStrBuf.append("<tr bgcolor= #C0C0C0>");
 			
 			/* Add test class name. */
 			retStrBuf.append("<td>");
@@ -412,12 +413,13 @@ public class CustomTestNGReporter implements IReporter {
 			retStrBuf.append("</td>");
 			
 			/* Add start time. */
-			retStrBuf.append("<td>");
+		/*	retStrBuf.append("<td>");
 			retStrBuf.append(startDateStr);
-			retStrBuf.append("</td>");
+			retStrBuf.append("</td>");*/
 			
 			/* Add execution time. */
-			retStrBuf.append("<td>");
+			 
+			retStrBuf.append("<td bgcolor=#DAF7A6>");
 			retStrBuf.append(executeTimeStr);
 			retStrBuf.append("</td>");
 			
@@ -449,7 +451,6 @@ public class CustomTestNGReporter implements IReporter {
 		return retStrBuf.toString();
 	}
 	
-	/* Convert a string array elements to a string. */
 	private String stringArrayToString(String strArr[])
 	{
 		StringBuffer retStrBuf = new StringBuffer();

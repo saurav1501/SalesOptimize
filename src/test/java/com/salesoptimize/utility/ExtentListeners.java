@@ -37,7 +37,7 @@ public class ExtentListeners extends BaseClass implements ITestListener {
 		for (String groups : group) {
 			test.assignCategory(groups);
 		}
-		test.assignAuthor("ProjectType " + SuiteName);
+		test.assignAuthor("SalesOptimize " + SuiteName);
 		testLog = new ThreadLocal<>();
 		testLog.set(test);
 		testlog = testLog;
@@ -47,7 +47,9 @@ public class ExtentListeners extends BaseClass implements ITestListener {
 	public void onTestSuccess(ITestResult result) {
 
 		String methodName = result.getMethod().getMethodName();
-		String logText = "<b>" + "TEST CASE:- " + methodName.toUpperCase() + " PASSED" + "</b>";
+		//String logText = "<b>" + "TEST CASE:- " + methodName.toUpperCase() + " PASSED" + "</b>";
+		String logText = "<b>" + "PASSED" + "</b>";
+		
 		Markup m = MarkupHelper.createLabel(logText, ExtentColor.GREEN);
 		testLog.get().pass(m);
 
