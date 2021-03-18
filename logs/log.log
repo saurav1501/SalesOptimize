@@ -1,2 +1,2 @@
-2021-03-18 00:31:29 INFO  WebDriverManager:606 - Using chromedriver 89.0.4389.23 (resolved driver for Chrome 89)
-2021-03-18 00:31:29 INFO  WebDriverManager:662 - Exporting webdriver.chrome.driver as C:\Users\SauravKumarSinha\.cache\selenium\chromedriver\win32\89.0.4389.23\chromedriver.exe
+2021-03-18 19:37:20 INFO  WebDriverManager:606 - Using chromedriver 89.0.4389.23 (resolved driver for Chrome 89)
+2021-03-18 19:37:20 INFO  WebDriverManager:662 - Exporting webdriver.chrome.driver as /Users/sauravsinha/.cache/selenium/chromedriver/mac64/89.0.4389.23/chromedriver
